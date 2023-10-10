@@ -16,8 +16,8 @@ const Intro = () => {
         venture capital and tech sales.
         <Link>
           <button className="btn">
-            <img src="" alt="" />
-            Hire me!
+            {/* <img src={btnImg} alt="Hire" className='btnImg'/>  */}
+            Hire Me
           </button>
         </Link>
       </div>

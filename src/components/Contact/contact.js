@@ -8,7 +8,7 @@ import "./contact.css";
 // import youtubeIcon from '../../assets/youtube.png';
 // import instagramIcon from '../../assets/instagram.png';
 import React, { useRef } from "react";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef();
@@ -16,23 +16,23 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // emailjs
-    //   .sendForm(
-    //     "service_6phm4ar",
-    //     "template_zcxds5a",
-    //     form.current,
-    //     "blaHt_5KIJ711DfGH"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //       e.target.reset();
-    //       alert("Email Sent !");
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        "service_y2r7rej",
+        "template_xq9pt1a",
+        form.current,
+        "U0hBy23Fa8K3cVg-7"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          e.target.reset();
+          alert("Email Sent!");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
